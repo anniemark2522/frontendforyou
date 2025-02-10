@@ -1,0 +1,14 @@
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/fonts/KanitRegular.ttf");
+    font-family: Kanit;
+    font-weight: 400;
+}
+@font-face{
+    font-display: swap;
+    font-style: normal;
+    src: url("/fonts/KanitMedium.ttf");
+    font-family: Kanit;
+    font-weight: 500;
+}

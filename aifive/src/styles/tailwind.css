@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li:focus-visible{
+    outline: none;
+}
+li:hover{
+    cursor: pointer;
+}
+@layer base{
+    :root{
+        /* color variables*/
+        --black_900: #000000;
+        --black_900_3f:#0000003f;
+        --blue_900: #134e9b;
+        --blue_900_66: #134e9b66;
+        --blue_900_b2: #134e9bb2;
+        --red_900:#a51931;
+        --red_900_7f: #a519317f;
+        --white_a700: #ffffff;
+
+        /* Shadow variables*/
+        --shadow-xs: 0 4px 4px 0 #0000003f;
+
+        /* Bordeer radius variables*/
+        --radius-xs: 4px;
+
+        /*Spacing variables*/
+        --space-xs: 4px;
+        --space-sm: 10px;
+        --space-md: 34px;
+    }
+    [type="text"],
+    input:where(:not([type])),
+    [type="email"]
+    [type="url"]
+    [type="password"]
+    [type="number"]
+    [type="date"]
+    [type="datetime-local"]
+    [type="month"]
+    [type="search"]
+    [type="tel"]
+    [type="time"]
+    [type="week"]
+    [multiple],
+    textarea,
+    select{
+        appearance: none;
+        background-color: transparent;
+        border-color: unset;
+        border-width: 0;
+        border-radius: unset;
+        padding: unset;
+        font-size: unset;
+        line-height: unset;
+    }
+    [type="text"]:focus,
+    [type="email"]:focus,
+    [type="url"]:focus,
+    [type="password"]:focus,
+    [type="number"]:focus,
+    [type="data"]:focus,
+    [type="search"]:focus,
+    [multiple]:focus,
+    textarear:focus,
+    select:focus{
+        --tw-ring-color:transparent;
+        border-color: transparent;
+    }
+    [type="radio"]:focus,
+    [type="checkbox"]:focus{
+        --tw-ring-color:transparent;
+    }
+
+}
